@@ -24,7 +24,7 @@ function loadDocbp() {
             setup(data);
         }
     };
-    xhttp.open("GET", 'https://pixabay.com/api/?pretty=true&key=' + key + '&id=' + window.npicid , true);
+    xhttp.open("GET", 'https://pixabay.com/api/?pretty=true&key=' + key + '&id=' + getParameterByName('id'), true);
     xhttp.send();
 
 }

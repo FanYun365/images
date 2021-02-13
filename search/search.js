@@ -31,7 +31,7 @@ var i;
 
 function show(a){
     window.resno = parseInt(resno) + a ;
-    window.location.href = "?max=" + window.resno ;
+    window.location.search = "?q="+getParameterByName('q') +"&max=" + window.resno ;
 }
 var text = "";
 var i;
@@ -40,7 +40,7 @@ var i;
 function setup(resno) {
     document.getElementById('container').innerHTML = "";
     for (i = 0; i < resno; i++) {
-        text += '<div class="image"><a href="../image/' + data.hits[i].id + '-' + data.hits[i].pageURL.split('/')[4] + '"><img src="' + data.hits[i].webformatURL + '" width="' + data.hits[i].previewWidth * 2.4 +
+        text += '<div class="image"><a href="../image?id=' + data.hits[i].id + '&title=' + data.hits[i].pageURL.split('/')[4] + '"><img src="' + data.hits[i].webformatURL + '" width="' + data.hits[i].previewWidth * 2.4 +
             '" height="' + data.hits[i].previewHeight * 2.4 + '" class="img-thumbnail" ></a> <div class="imgfooter"><a href="' + data.hits[i].largeImageURL + ' " target="_blank" download><button class="imgdownload">Download</button></a><a href="../image?id=' + data.hits[i].id + '" ><button class="imgopen">Open</button></a></div> </div>';
     }
     document.getElementById('container').innerHTML = text;

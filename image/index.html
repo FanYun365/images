@@ -8,6 +8,7 @@
     <title>PHOSHADE - Free Hight Quality Images</title>
     <link rel="icon" href="../logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../bootstrap.css">
+    <link rel="stylesheet" href="../site.css">
     <script src="../assets/image.js"></script>
 </head>
 
@@ -19,7 +20,7 @@
             <button type="submit" class="searchbtn">SEARCH</button>
         </form>
     </header>
-    <div id="container" class="row container-fluid">
+    <div id="container" class="row container-fluid" style="text-align: center;">
         <div id="imgcont" class="col-sm-9 col-md-6 col-lg-8 col-xl-10">
             <img src="../logo.png" width="360" height="237.6" id="imagepx">
         </div>
@@ -35,75 +36,21 @@
             <a href="" id="download" download><div class="btn btn-outline-success">Download</div></a>
         </div>
     </div>
+    <div id="reccomendation">
+        <a href="../search/?q=backgrounds"><div class="categories">Backgrounds</div></a>
+    </div>
 
+    <script>
+        var text ="" ;
+        var i ="";
+        var categories = ["backgrounds","fashion","nature","science", "education", "feelings", "health", "people", "religion", "places", "animals", "industry", "computer", "food", 'sports', 'transportation', 'travel', 'buildings', 'business', 'music']
+        for (i = 0; i < categories.length ; i++) {
+        text += '<a href="../search/?q='+categories[i]+'"><div class="categories">'+categories[i]+'</div></a>';
+    }
+    document.getElementById('reccomendation').innerHTML = text ;
+    </script>
 
-
-    <style>
-        header {
-            background-color: rgb(187, 245, 245);
-            padding: 6px;
-            padding-bottom: 10px;
-            height: 60px;
-            text-align: justify;
-        }
-
-        #container {
-            text-align: center;
-            background: rgb(155, 211, 206);
-        }
-        #imgcont {
-            width: 60%;
-            background-color: aquamarine;
-        }
-        #imgcont img {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        h1 {
-            display: inline-block;
-        }
-        form {
-            text-align: center;
-            display: inline-block;
-            width: 500px;
-            padding: 0;
-            margin-bottom: 4px;
-        }
-        button {
-            background: none;
-            border: 0;
-        }
-        .search {
-            background: rgb(240, 220, 230);
-            font-size: 20px;
-            border: 0;
-            border-radius: 2px;
-            width: 550;
-            padding: 4px;
-            outline: none;
-        }
-        .searchbtn {
-            background: rgb(165, 219, 223);
-            font-size: 20px;
-            border: 0;
-            border-radius: 2px;
-            width: 550;
-            padding: 4px;
-            outline: none;
-        }
-        ul {
-            width: 100%;
-            text-align: left;
-            list-style-type: none;
-            background: rgb(134, 188, 240);
-        }
-        @media (max-width: 700px) {
-            form {
-                width: 20px;
-            }
-        }
-    </style>
+    
 </body>
 
 </html>
