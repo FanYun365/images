@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^image/(.*)/(.*) image/index.html?id=$1&title=$2 [NC,L]
+RewriteRule ^image/(.*)-(.*) image/index.html?id=$1&title=$2 [NC,L]
+RewriteRule ^image/(.*) image/index.html?id=$1 [NC,L]
+
+
+ErrorDocument 404 404.html
