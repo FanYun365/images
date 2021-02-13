@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOSHADE - Free Hight Quality Images</title>
+    <link rel="icon" href="../logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../bootstrap.css">
+    <script src="../assets/image.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../"><h1>PHOSHADE</h1></a>
+        <form action="../search/" method="get">
+            <input type="text" name="q" class="search" placeholder="Search nature ,Car...">
+            <button type="submit" class="searchbtn">SEARCH</button>
+        </form>
+    </header>
+    <div id="container" class="row container-fluid">
+        <div id="imgcont" class="col-sm-9 col-md-6 col-lg-8 col-xl-10">
+            <img src="../logo.png" width="360" height="237.6" id="imagepx">
+        </div>
+        <div id="deteils" class="col-sm-3 col-md-6 col-lg-4 col-xl-2">
+            <ul>
+                <li>Views :- <span id="viewcount"></span></li>
+                <li>Downloads :- <span id="downcount"></span></li>
+                <li>Like :- <span id="likecount"></span></li>
+                <li>Tags :- <span id="tags"></span></li>
+                <li>id :- <span id="picid"></span></li>
+                <li>Resolution :- <span id="resolution"></span></li>
+            </ul>
+            <a href="" id="download" download><div class="btn btn-outline-success">Download</div></a>
+        </div>
+    </div>
+
+
+
+    <style>
+        header {
+            background-color: rgb(187, 245, 245);
+            padding: 6px;
+            padding-bottom: 10px;
+            height: 60px;
+            text-align: justify;
+        }
+
+        #container {
+            text-align: center;
+            background: rgb(155, 211, 206);
+        }
+        #imgcont {
+            width: 60%;
+            background-color: aquamarine;
+        }
+        #imgcont img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        h1 {
+            display: inline-block;
+        }
+        form {
+            text-align: center;
+            display: inline-block;
+            width: 500px;
+            padding: 0;
+            margin-bottom: 4px;
+        }
+        button {
+            background: none;
+            border: 0;
+        }
+        .search {
+            background: rgb(240, 220, 230);
+            font-size: 20px;
+            border: 0;
+            border-radius: 2px;
+            width: 550;
+            padding: 4px;
+            outline: none;
+        }
+        .searchbtn {
+            background: rgb(165, 219, 223);
+            font-size: 20px;
+            border: 0;
+            border-radius: 2px;
+            width: 550;
+            padding: 4px;
+            outline: none;
+        }
+        ul {
+            width: 100%;
+            text-align: left;
+            list-style-type: none;
+            background: rgb(134, 188, 240);
+        }
+        @media (max-width: 700px) {
+            form {
+                width: 20px;
+            }
+        }
+    </style>
+</body>
+
+</html>
