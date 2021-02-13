@@ -45,20 +45,19 @@
             <a href="" id="download" download><div class="btn btn-outline-success">Download</div></a>
         </div>
     </div>
-    <div id="reccomendation">
-        <a href="../search/?q=backgrounds"><div class="categories">Backgrounds</div></a>
-    </div>
+   <div id="reccomendation">
+    <a href="../search/?q=backgrounds"><div class="categories">Backgrounds</div></a>
+</div>
 
-    <script>
-        var text ="" ;
-        var i ="";
-        var categories = ["backgrounds","fashion","nature","science", "education", "feelings", "health", "people", "religion", "places", "animals", "industry", "computer", "food", 'sports', 'transportation', 'travel', 'buildings', 'business', 'music']
-        for (i = 0; i < categories.length ; i++) {
-        text += '<a href="../search/?q='+categories[i]+'"><div class="categories">'+categories[i]+'</div></a>';
-    }
-    document.getElementById('reccomendation').innerHTML = text ;
-    </script>
-
+<script>
+    var textc ="" ;
+    var i ="";
+    var categories = ["backgrounds","fashion","nature","science", "education", "feelings", "health", "people", "religion", "places", "animals", "industry", "computer", "food", 'sports', 'transportation', 'travel', 'buildings', 'business', 'music']
+    for (i = 0; i < categories.length ; i++) {
+    textc += '<a href="../search/?q='+categories[i]+'"><div class="categories">'+categories[i]+'</div></a>';
+}
+document.getElementById('reccomendation').innerHTML = textc ;
+</script>
     
 </body>
 
