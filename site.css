@@ -129,4 +129,11 @@ ul {
         display: inline-block;
         width: 100%;
     }
+    #imgcont {
+
+    width: 100%;
+
+    background-color: rgb(206, 245, 232);
+
+}
 }
